@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+        <ImageView
+            android:id="@+id/rectangle_1"
+            android:layout_width="335dp"
+            android:layout_height="130dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/rectangle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/welcome_bac"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="top"
+            android:lineSpacingExtra="0sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Welcome back"
+            android:textAppearance="@style/welcome_bac"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rectangle_1"
+            app:layout_constraintVertical_bias="0.065" />
+
+        <TextView
+            android:id="@+id/please_ente"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="62dp"
+            android:alpha="0.6"
+            android:gravity="top"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:lineSpacingExtra="2sp"
+            android:text="Please enter login details to access to use the app"
+            android:textAppearance="@style/please_ente"
+            android:translationY="-1.09sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.294"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/welcome_bac"
+            app:layout_constraintVertical_bias="0.004" />
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/rectangle_3"
+            android:layout_width="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="66dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textAppearance="@style/employee_id"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/please_ente"
+            app:layout_constraintVertical_bias="0.044">
+                <EditText
+                    android:background="@drawable/rectangle_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAppearance="@style/employee_id"
+                        android:hint="Employee Id"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/rectangle_4"
+            android:layout_width="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="66dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rectangle_3"
+            app:layout_constraintVertical_bias="0.044">
+
+                <EditText
+                    android:background="@drawable/rectangle_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAppearance="@style/employee_id"
+                    android:inputType="textPassword"
+                    android:hint="Password"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/rectangle_2"
+            android:layout_width="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="56dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/rectangle_1"
+            android:gravity="center"
+            android:text="Login"
+            android:textAppearance="@style/login"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.478"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rectangle_4"
+            app:layout_constraintVertical_bias="0.455" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

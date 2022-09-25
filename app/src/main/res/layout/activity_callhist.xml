@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CallhistActivity">
+
+    <TextView
+        android:id="@+id/calls_histo"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="top"
+        android:lineSpacingExtra="-14sp"
+        android:text="Calls History"
+        android:textAppearance="@style/calls_histo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.099" />
+
+    <RelativeLayout
+        android:id="@+id/rectangle_6"
+        android:layout_width="133dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rectangle_6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toEndOf="@+id/calls_histo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.083">
+
+        <TextView
+            android:id="@+id/all"
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="All"
+            android:textAppearance="@style/all"
+            android:lineSpacingExtra="-2sp"
+            android:gravity="top"
+            />
+
+        <ImageView
+            android:id="@+id/icons8_noti"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="6dp"
+            android:alpha="0.5"
+            android:background="@drawable/ic_baseline_arrow_drop_down_24" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rectangle_66"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rectangle_6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.342"
+        app:layout_constraintStart_toEndOf="@+id/rectangle_6"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.082">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_baseline_search_24"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rectangle_2"
+        android:layout_width="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="147dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="428dp"
+        android:background="@drawable/rectangle_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calls_histo">
+
+        <ImageView
+            android:id="@+id/ellipse_8"
+            android:layout_width="71dp"
+            android:layout_height="71dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/ellipse_8"
+            android:src="@drawable/ic_baseline_person_3_24" />
+
+        <TextView
+            android:id="@+id/client_name2"
+            android:layout_width="93dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/ellipse_8"
+            android:lineSpacingExtra="-5sp"
+            android:text="Client Name"
+            android:textAppearance="@style/client_name"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/vector"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:background="#05AD01">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_call_24" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/type_xyz_cl"
+            android:layout_width="101dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vector"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-5dp"
+            android:layout_toRightOf="@id/ellipse_8"
+            android:lineSpacingExtra="-6sp"
+            android:text="Type xyz client"
+            android:textAppearance="@style/type_xyz_cl" />
+
+        <ImageView
+            android:id="@+id/icons8_notif"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="31dp"
+            android:layout_marginBottom="15dp"
+            android:alpha="0.5"
+            android:background="@drawable/icons8_noti"
+            android:src="@drawable/time" />
+
+        <TextView
+            android:id="@+id/am"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="14dp"
+            android:layout_toRightOf="@id/icons8_notif"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="-6sp"
+            android:text="10:00 am"
+            android:textAppearance="@style/am" />
+
+        <ImageView
+            android:id="@+id/icons8_notif2"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/date"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/icons8_noti"
+            android:alpha="0.5"
+            />
+        <TextView
+            android:id="@+id/am2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/icons8_notif2"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="14dp"
+            android:text="25 OCt, 2022"
+            android:maxLines="1"
+            android:textAppearance="@style/am"
+            android:lineSpacingExtra="-6sp"
+            android:gravity="center_vertical"
+            />
+
+
+    </RelativeLayout>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:foregroundGravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomappbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            app:hideOnScroll="true"
+            >
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:menu="@menu/nav_menu"
+                app:labelVisibilityMode="selected"
+                android:id="@+id/bottomnavview"
+                />
+
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_add_24"
+            app:layout_anchor="@id/bottomappbar" />
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/hello_aman"
+        android:layout_width="93dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0.6"
+        android:gravity="top"
+        android:lineSpacingExtra="2sp"
+        android:text="Hello Aman"
+        android:textAppearance="@style/hello_aman"
+        android:translationY="-1.09sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.073" />
+
+    <TextView
+        android:id="@+id/emp_id_stat"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="top"
+        android:lineSpacingExtra="12sp"
+        android:text="EMP ID/STATE"
+        android:textAppearance="@style/emp_id_stat"
+        android:translationY="-6sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.115" />
+
+    <LinearLayout
+        android:id="@+id/rectangle_7"
+        android:layout_width="0dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="54dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rectangle_7"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.372"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emp_id_stat"
+        app:layout_constraintVertical_bias="0.019">
+
+        <TextView
+            android:id="@+id/today_s_lea"
+            android:layout_width="181dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="-14sp"
+            android:text="Today's lead"
+            android:textAppearance="@style/today_s_lea" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/activity"
+        android:layout_width="67dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="top"
+        android:lineSpacingExtra="-8sp"
+        android:text="Activity"
+        android:textAppearance="@style/activity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_7"
+        app:layout_constraintVertical_bias="0.075" />
+
+    <TextView
+        android:id="@+id/see_all"
+        android:layout_width="42dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="right|center_vertical"
+        android:lineSpacingExtra="-6sp"
+        android:text="See All"
+        android:textAppearance="@style/see_all"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.905"
+        app:layout_constraintStart_toEndOf="@+id/activity"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_7"
+        app:layout_constraintVertical_bias="0.085" />
+
+
+    <RelativeLayout
+        android:id="@+id/rectangle_2"
+        android:layout_width="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="147dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/rectangle_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity"
+        app:layout_constraintVertical_bias="0.069">
+
+        <ImageView
+            android:id="@+id/ellipse_8"
+            android:layout_width="71dp"
+            android:layout_height="71dp"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/ic_baseline_person_3_24" />
+
+        <TextView
+            android:id="@+id/client_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/ellipse_8"
+            android:lineSpacingExtra="-5sp"
+            android:text="Client Name"
+            android:textAppearance="@style/client_name"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/vector"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:background="#05AD01">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_call_24" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/type_xyz_cl"
+            android:layout_width="101dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vector"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/ellipse_8"
+            android:lineSpacingExtra="-6sp"
+            android:text="Type xyz client"
+            android:textAppearance="@style/type_xyz_cl" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rectangle_3"
+        android:layout_width="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="147dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/rectangle_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_2"
+        app:layout_constraintVertical_bias="0.057">
+
+        <ImageView
+            android:id="@+id/ellipse_81"
+            android:layout_width="71dp"
+            android:layout_height="71dp"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/ic_baseline_person_3_24" />
+
+        <TextView
+            android:id="@+id/client_name21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/ellipse_81"
+            android:lineSpacingExtra="-5sp"
+            android:text="Client Name"
+            android:textAppearance="@style/client_name"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+        <RelativeLayout
+            android:id="@+id/vector1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:background="#05AD01">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_call_24"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/type_xyz_cl1"
+            android:layout_width="101dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/ellipse_81"
+            android:layout_centerVertical="true"
+            android:text="Type xyz client"
+            android:textAppearance="@style/type_xyz_cl"
+            android:lineSpacingExtra="-6sp"
+            android:layout_below="@id/vector1"
+            />
+
+
+    </RelativeLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foregroundGravity="bottom">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomappbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            app:hideOnScroll="true">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomnavview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:labelVisibilityMode="selected"
+                app:menu="@menu/nav_menu" />
+
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_add_24"
+            app:layout_anchor="@id/bottomappbar" />
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

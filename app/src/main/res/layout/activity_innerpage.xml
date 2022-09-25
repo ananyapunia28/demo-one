@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InnerpageActivity">
+
+    <RelativeLayout
+        android:id="@+id/rectangle_1"
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#EC1C24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+        <RelativeLayout
+            android:id="@+id/rectangle_6"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="-5dp"
+            android:background="#1D7F35">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_chevron_left_24"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/client_name"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@id/rectangle_6"
+            android:lineSpacingExtra="-14sp"
+            android:text="Client Name"
+            android:textAppearance="@style/client_name" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rectangle_2"
+        android:layout_width="388dp"
+        android:layout_height="147dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/rectangle_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_1"
+        app:layout_constraintVertical_bias="0.057">
+        <ImageView
+            android:id="@+id/ellipse_8"
+            android:layout_width="71dp"
+            android:layout_height="71dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="29dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/ic_baseline_person_3_24"
+            android:background="@drawable/ellipse_8"
+            />
+
+        <TextView
+            android:id="@+id/client_name2"
+            android:layout_width="93dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ellipse_8"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:lineSpacingExtra="-5sp"
+            android:text="Client Name"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textAppearance="@style/client_name" />
+        <RelativeLayout
+            android:id="@+id/vector"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:background="#05AD01">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_call_24"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/type_xyz_cl"
+            android:layout_width="101dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/ellipse_8"
+            android:layout_centerVertical="true"
+            android:text="Type xyz client"
+            android:textAppearance="@style/type_xyz_cl"
+            android:lineSpacingExtra="-6sp"
+            android:layout_below="@id/vector"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rectangle_7"
+        android:layout_width="388dp"
+        android:layout_height="64dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rectangle_7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_2"
+        app:layout_constraintVertical_bias="0.053">
+
+        <TextView
+            android:id="@+id/remark"
+            android:layout_width="181dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="44dp"
+            android:layout_centerVertical="true"
+            android:text="Remark"
+            android:textAppearance="@style/remark"
+            android:lineSpacingExtra="-14sp"
+            android:gravity="top"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rectangle_3"
+        android:layout_width="388dp"
+        android:layout_height="76dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rectangle_3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_7"
+        app:layout_constraintVertical_bias="0.07">
+
+        <TextView
+            android:id="@+id/upload_reco"
+            android:layout_width="118dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="41dp"
+            android:alpha="0.6"
+            android:gravity="top"
+            android:lineSpacingExtra="5sp"
+            android:text="Upload Record"
+            android:textAppearance="@style/upload_reco"
+            android:translationY="-2.45sp" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/pdf" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/previous_rec"
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="82dp"
+        android:gravity="top"
+        android:lineSpacingExtra="-14sp"
+        android:text="Previous Record"
+        android:textAppearance="@style/previous_re"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_3"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
